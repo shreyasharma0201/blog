@@ -4,6 +4,9 @@ import User from './User';
 import CUser from './ClassUser';
 import State from './State';
 import StateClass from './StateClass';
+import Props from './Props';
+import PropsClass from './PropsClass';
+
 function App() {
   // component created inside another component.
   function Apple(){
@@ -27,6 +30,10 @@ function App() {
       {/* <button onClick={Apple}>Click me</button> */}
       {/* <State/> */}
       <StateClass/>
+      <Props name= {'Props'} subject={'functional component'}>
+        This is props children.
+      </Props>
+      <PropsClass name = {'class component'}></PropsClass>
     </div>
   );
 }
